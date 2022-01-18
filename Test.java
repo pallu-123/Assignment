@@ -1,74 +1,30 @@
-package DataStructure;
-abstract class Shape  
-{ 
-    String color; 
-    abstract double area(); 
-    public abstract String toString(); 
-    public Shape(String color) 
-    { 
-        System.out.println("Shape constructor called"); 
-        this.color = color; 
-    } 
-    public String getColor() 
-    { 
-        return color; 
-    } 
-} 
-class Circle extends Shape 
-{ 
-    double radius; 
-    public Circle(String color,double radius) 
-    { 
-        super(color); 
-        System.out.println("Circle constructor called"); 
-        this.radius = radius; 
-    }
-    @Override
-    double area() 
-    { 
-        return Math.PI * Math.pow(radius, 2); 
-    } 
-    @Override
-    public String toString() 
-    { 
-        return "Circle color is " + super.color + "and area is : " + area(); 
-    } 
-} 
-class Rectangle extends Shape
-{ 
-    double length; 
-    double width; 
-    public Rectangle(String color,double length,double width) 
-    { 
-        super(color); 
-        System.out.println("Rectangle constructor called"); 
-        this.length = length; 
-        this.width = width; 
-    } 
-    @Override
-    double area() 
-    { 
-        return length*width; 
-    } 
-    @Override
-    public String toString() 
-    { 
-        return "Rectangle color is " + super.color +  
-                           "and area is : " + area(); 
-    } 
-} 
-
+package Filehandling;
+import java.io.IOException; 
+import java.nio.file.*; 
+  
 
 public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Shape s1 = new Circle("Red", 2.2); 
-        Shape s2 = new Rectangle("Yellow", 2, 4);
-        System.out.println(s1.toString()); 
-        System.out.println(s2.toString()); 
-
-
-	}
-
+        try
+        { 
+            Files.deleteIfExists(Paths.get("c://temp//testFile2.txt")); 
+        } 
+        catch(NoSuchFileException e) 
+        { 
+            System.out.println("No such file/directory exists"); 
+        } 
+        catch(DirectoryNotEmptyException e) 
+        { 
+            System.out.println("Directory is not empty."); 
+        } 
+        catch(IOException e) 
+        { 
+            System.out.println("Invalid permissions."); 
+        } 
+          
+        System.out.println("Deletion successful."); 
+    } 
 }
+
