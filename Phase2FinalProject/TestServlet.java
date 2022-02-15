@@ -1,4 +1,4 @@
-package com.kartik.training;
+package com.pallu;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -19,7 +19,7 @@ public class TestServlet extends HttpServlet {
 
 	//Define datasource/connection pool for reference
 	
-	@Resource(name="new_Abhishek")
+	@Resource(name="new_Chandu")
 	private DataSource dataSource;	
 	
 	/**
