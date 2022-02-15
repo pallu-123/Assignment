@@ -1,4 +1,4 @@
-package com.hari.training;
+package com.pallu;
 
 import java.util.List;
 
