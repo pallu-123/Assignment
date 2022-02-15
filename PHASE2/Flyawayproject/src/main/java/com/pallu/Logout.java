@@ -1,4 +1,4 @@
-package com.sharu;
+package com.pallu;
 
 import  javax.servlet.annotation.WebServlet;
 import  java.io.IOException;
