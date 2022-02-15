@@ -1,4 +1,4 @@
-package com.Retrieving;
+package com.pallu;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,9 +19,9 @@ public class Login1 extends HttpServlet{
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String url="jdbc:mysql://localhost:3306/student_details";
+		String url="jdbc:mysql://localhost:3306/mphasis";
 		String uname="root";
-		String pass="";
+		String pass="Tiger@146";
 		
 		
 		response.setContentType("text/html");
