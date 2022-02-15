@@ -1,4 +1,4 @@
-package com.java.userlogin;
+package com.pallu;
 
 import java.io.IOException;
 import java.io.PrintWriter;
