@@ -1,4 +1,4 @@
-package com.kartik.training;
+package com.pallu;
 public class Class {	
 	private int id;
 	private int section;
