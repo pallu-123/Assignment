@@ -9,7 +9,7 @@
 <body>
 <h1>Enter Product Details</h1>
 <hr>
-<form  action="insert">
+<form  action="Insert">
     
     <ul>
         <li>
