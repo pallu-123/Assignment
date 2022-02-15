@@ -1,4 +1,4 @@
-package com.sharu.Flyawayproject;
+package com.pallu.Flyawayproject;
 
 /**
  * Hello world!
