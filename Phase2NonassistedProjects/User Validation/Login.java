@@ -1,4 +1,4 @@
-package com.java.userlogin;
+package com.pallu;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -27,7 +27,7 @@ public class Login extends HttpServlet {
 		HttpSession theSession = request.getSession();
 		
 //		Validate the username
-		if(uName.trim().equals("admin_mp")  && uPassword.trim().equals("mphasis99")) {
+		if(uName.trim().equals("admin_pallu")  && uPassword.trim().equals("mphasis@99")) {
 //			Save the username in the session
 			theSession.setAttribute("userName", uName);
 			theSession.setAttribute("userPassword", uPassword);
